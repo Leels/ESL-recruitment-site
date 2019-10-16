@@ -16,6 +16,10 @@
    margin-left: 30px;
  }
 
+ p {
+   display: inline;
+ }
+
 .classroom {
   width: 100%;
 }
@@ -34,6 +38,9 @@
   left: 50%;
   transform: translate(-50%, -50%);
 }
+.esl {
+  color: magenta;
+}
 
 h1 {
   font-size: 500%;
@@ -48,7 +55,7 @@ h2 {
 }
 
 body {
-  background-color: lightblue;
+  background-color: #ebf6f9;
   font-family: 'Josefin Sans', sans-serif;
 
 }
@@ -60,8 +67,11 @@ h3 {
   display: grid;
   grid-row: 1;
 }
+.social-media {
+  float: left;
+}
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   body {
     background-color: black;
     color: white;
@@ -69,6 +79,9 @@ h3 {
   .grid {
     display: grid;
     grid-template-rows: repeat(auto-fit, minmax(50px, 1fr));
-
+    grid-template-columns: none;
+  }
+  h1 {
+    font-size: 300%;
   }
 }
